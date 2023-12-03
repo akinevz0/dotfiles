@@ -3,3 +3,8 @@
 [user]
 	email = akinevz@outlook.com
 	name = Kirill <kine> Nevzorov
+[alias] 
+	ch = checkout
+	br = branch
+	cm = commit
+	st = status

@@ -1,3 +1,4 @@
+[[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -90,6 +91,10 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
