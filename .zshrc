@@ -72,7 +72,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,9 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='vi'
 else
-  export EDITOR='nvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
